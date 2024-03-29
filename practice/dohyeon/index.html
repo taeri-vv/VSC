@@ -4,10 +4,35 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+      .H-SB {
+        text-decoration: underline;
+      }
+    </style>
+    <script>
+      function show() {
+        // <img>에 달기
+        document.getElementById("fig").src = "garlictteokbokki.jpg";
+      }
+      function hide() {
+        // <img>에 이미지 제거
+        document.getElementById("fig").src = "";
+      }
+    </script>
   </head>
   <body>
     <img src="../src/dohyeon-farmer.jpg" />
-    <img src="../src/dohyeon-dark.ver.jpg" />
+    <img src="../src/dohyeon-dark.ver.jpg" title="무시무시하다..." />
+    <h3 onmouseover="show()" onmouseout="hide()">
+      <p class="H-SB">
+        <span
+          onmouseover="this.style.color='#529CFF'"
+          onmouseout="this.style.color=''"
+          >황사부의 맛집 리스트 ▼</span
+        >
+      </p>
+    </h3>
+    <div><img id="fig" src="" style="max-width: 300px" /></div>
     <img src="../src/aftersun.jpg" />
     <img src="../src/RoboDreams.jpg" />
   </body>
