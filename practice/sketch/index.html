@@ -4,8 +4,62 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+      @import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
+      * {
+        font-family: "Spoqa Han Sans Neo", "sans-serif";
+      }
+      .cantainer {
+        max-width: 1000px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+      }
+      header {
+        height: 60px;
+        background-color: #fff;
+        color: #fff;
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+      }
+      a:link,
+      a:visited,
+      a:hover,
+      a:active {
+        color: #333;
+      }
+      header nav ul {
+        display: flex;
+        text-align: center;
+      }
+      header nav ul li {
+        padding: 20px 10px;
+        width: 88px;
+      }
+      header nav ul li a {
+        font-weight: bold;
+        font-size: 1.0625rem;
+      }
+    </style>
   </head>
-  <body>
-    <img src="../src/alex-wolf.jpg" style="max-width: 500px" />
+  <body style="max-width: 800px; margin-inline: auto">
+    <header>
+      <a href="../index.html">
+        <img src="../src/cursedham-gahoc.png" alt="" style="height: 60px"
+      /></a>
+      <nav>
+        <ul>
+          <li><a href="../dohyeon/index.html">도핸이</a></li>
+          <li><a href="../kitty/index.html">😸</a></li>
+          <li><a href="../music/index.html">🎵</a></li>
+          <li><a href="../sketch/index.html">🗒️</a></li>
+        </ul>
+      </nav>
+    </header>
+    <p>
+      <img src="../src/alex-wolf.jpg" style="max-width: 500px" />
+    </p>
   </body>
 </html>
